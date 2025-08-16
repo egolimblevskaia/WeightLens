@@ -1,0 +1,57 @@
+# Transcoder Configuration for our Llama 3.2 1B ReLU transcoders
+model_name: "gpt2"
+feature_input_hook: "hook_resid_mid"
+feature_output_hook: 'mlp.hook_out'
+repo_id: "pchlenski/gpt2-transcoders"
+d_model: 768
+d_transcoder: 24576
+
+transcoders:
+  - id: "gpt2-small-0"
+    layer: 0
+    filepath: "final_sparse_autoencoder_gpt2-small_blocks.0.ln2.hook_normalized_24576.pt"
+
+  - id: "gpt2-small-1"
+    layer: 1
+    filepath: "final_sparse_autoencoder_gpt2-small_blocks.1.ln2.hook_normalized_24576.pt"
+
+  - id: "gpt2-small-2"
+    layer: 2
+    filepath: "final_sparse_autoencoder_gpt2-small_blocks.2.ln2.hook_normalized_24576.pt"
+
+  - id: "gpt2-small-3"
+    layer: 3
+    filepath: "final_sparse_autoencoder_gpt2-small_blocks.3.ln2.hook_normalized_24576.pt"
+
+  - id: "gpt2-small-4"
+    layer: 4
+    filepath: "final_sparse_autoencoder_gpt2-small_blocks.4.ln2.hook_normalized_24576.pt"
+
+  - id: "gpt2-small-5"
+    layer: 5
+    filepath: "final_sparse_autoencoder_gpt2-small_blocks.5.ln2.hook_normalized_24576.pt"
+
+  - id: "gpt2-small-6"
+    layer: 6
+    filepath: "final_sparse_autoencoder_gpt2-small_blocks.6.ln2.hook_normalized_24576.pt"
+
+  - id: "gpt2-small-7"
+    layer: 7
+    filepath: "final_sparse_autoencoder_gpt2-small_blocks.7.ln2.hook_normalized_24576.pt"
+
+  - id: "gpt2-small-8"
+    layer: 8
+    filepath: "final_sparse_autoencoder_gpt2-small_blocks.8.ln2.hook_normalized_24576.pt"
+
+  - id: "gpt2-small-9"
+    layer: 9
+    filepath: "final_sparse_autoencoder_gpt2-small_blocks.9.ln2.hook_normalized_24576.pt"
+
+  - id: "gpt2-small-10"
+    layer: 10
+    filepath: "final_sparse_autoencoder_gpt2-small_blocks.10.ln2.hook_normalized_24576.pt"
+
+  - id: "gpt2-small-11"
+    layer: 11
+    filepath: "final_sparse_autoencoder_gpt2-small_blocks.11.ln2.hook_normalized_24576.pt"
+  

@@ -1,0 +1,4 @@
+nltk
+
+# circuit-tracer itself
+git+https://github.com/safety-research/circuit-tracer.git@8b6d10a01a76f08c2280a84ed25efb669854e914
