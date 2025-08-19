@@ -9,7 +9,6 @@ import unicodedata
 from circuit_tracer import ReplacementModel
 
 from .utils import *
-from .model_utils import get_activation_with_stop
 
 
 def load_feature_analysis(

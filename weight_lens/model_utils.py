@@ -257,20 +257,3 @@ def configure_partial_replacement(
     model._deduplicate_attention_buffers()
     model.setup()
 
-
-def get_activation_with_stop(model, input, stop_at_layer, requires_grad=False):
-    """
-    Get the activation of the model at a specific layer.
-    """
-    activation_cache, activation_hooks = model._get_activation_caching_hooks(
-        sparse=False,
-        zero_bos=False,
-        apply_activation_function=True,
-    )
-    if not requires_grad:
-        with torch.inference_mode(), model.hooks(activation_hooks):
-            model.forward(input, stop_at_layer=stop_at_layer+1)
-    else: 
-        with model.hooks(activation_hooks):
-            model.forward(input, stop_at_layer=stop_at_layer+1)
-    return torch.stack(activation_cache[:stop_at_layer+1])
