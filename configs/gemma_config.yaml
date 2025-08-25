@@ -1,0 +1,110 @@
+# Transcoder Configuration Gemma Scope Transcoders (2nd lowest L0)
+model_name: "google/gemma-2-2b"
+feature_input_hook: "ln2.hook_normalized"
+feature_output_hook: 'hook_mlp_out'
+
+transcoders:
+  - id: "gemma-2-2b-gemmascope-0-l0-76"
+    layer: 0
+    filepath: "hf://google/gemma-scope-2b-pt-transcoders/layer_0/width_16k/average_l0_76/params.npz"
+    
+  - id: "gemma-2-2b-gemmascope-1-l0-65"
+    layer: 1
+    filepath: "hf://google/gemma-scope-2b-pt-transcoders/layer_1/width_16k/average_l0_65/params.npz"
+    
+  - id: "gemma-2-2b-gemmascope-2-l0-49"
+    layer: 2
+    filepath: "hf://google/gemma-scope-2b-pt-transcoders/layer_2/width_16k/average_l0_49/params.npz"
+    
+  - id: "gemma-2-2b-gemmascope-3-l0-54"
+    layer: 3
+    filepath: "hf://google/gemma-scope-2b-pt-transcoders/layer_3/width_16k/average_l0_54/params.npz"
+    
+  - id: "gemma-2-2b-gemmascope-4-l0-88"
+    layer: 4
+    filepath: "hf://google/gemma-scope-2b-pt-transcoders/layer_4/width_16k/average_l0_88/params.npz"
+    
+  - id: "gemma-2-2b-gemmascope-5-l0-87"
+    layer: 5
+    filepath: "hf://google/gemma-scope-2b-pt-transcoders/layer_5/width_16k/average_l0_87/params.npz"
+    
+  - id: "gemma-2-2b-gemmascope-6-l0-95"
+    layer: 6
+    filepath: "hf://google/gemma-scope-2b-pt-transcoders/layer_6/width_16k/average_l0_95/params.npz"
+    
+  - id: "gemma-2-2b-gemmascope-7-l0-70"
+    layer: 7
+    filepath: "hf://google/gemma-scope-2b-pt-transcoders/layer_7/width_16k/average_l0_70/params.npz"
+    
+  - id: "gemma-2-2b-gemmascope-8-l0-52"
+    layer: 8
+    filepath: "hf://google/gemma-scope-2b-pt-transcoders/layer_8/width_16k/average_l0_52/params.npz"
+    
+  - id: "gemma-2-2b-gemmascope-9-l0-72"
+    layer: 9
+    filepath: "hf://google/gemma-scope-2b-pt-transcoders/layer_9/width_16k/average_l0_72/params.npz"
+    
+  - id: "gemma-2-2b-gemmascope-10-l0-88"
+    layer: 10
+    filepath: "hf://google/gemma-scope-2b-pt-transcoders/layer_10/width_16k/average_l0_88/params.npz"
+    
+  - id: "gemma-2-2b-gemmascope-11-l0-5"
+    layer: 11
+    filepath: "hf://google/gemma-scope-2b-pt-transcoders/layer_11/width_16k/average_l0_5/params.npz"
+    
+  - id: "gemma-2-2b-gemmascope-12-l0-6"
+    layer: 12
+    filepath: "hf://google/gemma-scope-2b-pt-transcoders/layer_12/width_16k/average_l0_6/params.npz"
+    
+  - id: "gemma-2-2b-gemmascope-13-l0-8"
+    layer: 13
+    filepath: "hf://google/gemma-scope-2b-pt-transcoders/layer_13/width_16k/average_l0_8/params.npz"
+    
+  - id: "gemma-2-2b-gemmascope-14-l0-8"
+    layer: 14
+    filepath: "hf://google/gemma-scope-2b-pt-transcoders/layer_14/width_16k/average_l0_8/params.npz"
+    
+  - id: "gemma-2-2b-gemmascope-15-l0-8"
+    layer: 15
+    filepath: "hf://google/gemma-scope-2b-pt-transcoders/layer_15/width_16k/average_l0_8/params.npz"
+    
+  - id: "gemma-2-2b-gemmascope-16-l0-10"
+    layer: 16
+    filepath: "hf://google/gemma-scope-2b-pt-transcoders/layer_16/width_16k/average_l0_10/params.npz"
+    
+  - id: "gemma-2-2b-gemmascope-17-l0-12"
+    layer: 17
+    filepath: "hf://google/gemma-scope-2b-pt-transcoders/layer_17/width_16k/average_l0_12/params.npz"
+    
+  - id: "gemma-2-2b-gemmascope-18-l0-13"
+    layer: 18
+    filepath: "hf://google/gemma-scope-2b-pt-transcoders/layer_18/width_16k/average_l0_13/params.npz"
+    
+  - id: "gemma-2-2b-gemmascope-19-l0-12"
+    layer: 19
+    filepath: "hf://google/gemma-scope-2b-pt-transcoders/layer_19/width_16k/average_l0_12/params.npz"
+    
+  - id: "gemma-2-2b-gemmascope-20-l0-11"
+    layer: 20
+    filepath: "hf://google/gemma-scope-2b-pt-transcoders/layer_20/width_16k/average_l0_11/params.npz"
+    
+  - id: "gemma-2-2b-gemmascope-21-l0-13"
+    layer: 21
+    filepath: "hf://google/gemma-scope-2b-pt-transcoders/layer_21/width_16k/average_l0_13/params.npz"
+    
+  - id: "gemma-2-2b-gemmascope-22-l0-15"
+    layer: 22
+    filepath: "hf://google/gemma-scope-2b-pt-transcoders/layer_22/width_16k/average_l0_15/params.npz"
+    
+  - id: "gemma-2-2b-gemmascope-23-l0-25"
+    layer: 23
+    filepath: "hf://google/gemma-scope-2b-pt-transcoders/layer_23/width_16k/average_l0_25/params.npz"
+    
+  - id: "gemma-2-2b-gemmascope-24-l0-37"
+    layer: 24
+    filepath: "hf://google/gemma-scope-2b-pt-transcoders/layer_24/width_16k/average_l0_37/params.npz"
+    
+  - id: "gemma-2-2b-gemmascope-25-l0-41"
+    layer: 25
+    filepath: "hf://google/gemma-scope-2b-pt-transcoders/layer_25/width_16k/average_l0_41/params.npz"
+    
