@@ -115,7 +115,7 @@ def get_projection_to_embeddings(
     return (top_vals, top_idxs), (bot_vals, bot_idxs)
 
 
-def get_activation_with_stop(model, input, stop_at_layer, requires_grad=False):
+def get_activation_with_stop(model, input, stop_at_layer, requires_grad=False, return_logits=False):
     """
     Get the activation of the model at a specific layer.
     """
@@ -126,8 +126,11 @@ def get_activation_with_stop(model, input, stop_at_layer, requires_grad=False):
     )
     if not requires_grad:
         with torch.inference_mode(), model.hooks(activation_hooks):
-            model.forward(input, stop_at_layer=stop_at_layer+1)
+            logits = model.forward(input, stop_at_layer=stop_at_layer+1)
     else: 
         with model.hooks(activation_hooks):
-            model.forward(input, stop_at_layer=stop_at_layer+1)
-    return torch.stack(activation_cache[:stop_at_layer+1])
+            logits = model.forward(input, stop_at_layer=stop_at_layer+1)
+    if return_logits:
+        return torch.stack(activation_cache[:stop_at_layer+1]), logits
+    else: 
+        return torch.stack(activation_cache[:stop_at_layer+1])
